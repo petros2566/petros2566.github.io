@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+             /* Center align items */
+        }
+        .logo-container {
+            position: absolute; /* Position the logo at the top */
+            top: -14px;
+            left: 43%;
+        }
+        .logo img {
+            max-width: 225px; /* Adjust the logo size */
+        }
+        nav {
+            display: flex;
+            align-items: left;
+            padding: 10px 30px;
+            background-color: black;
+            z-index: 1000; /* Ensure the navigation is above other content */
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-left: 7px;
+            margin-top: 0px;
+        }
+        nav ul li a.button {
+            display: inline-block;
+            background-color: rgb(0, 0, 0);
+            text-decoration: none;
+            align-items: center;
+            margin-bottom: 10px;
+            color: white;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+            padding: 20px 20px; /* Set proper padding */
+            margin: 0;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            white-space: nowrap;
+            transition: all 0.2s ease;
+        }
+        nav ul li a.button:hover {
+            color: rgb(255, 255, 255);
+            transform: translateY(-10px);
+        }
+        .login-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #2e3d4f;
+            color: white;
+            border-radius: 9px;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .login-button:hover {
+            background-color: #3b5b96;
+            transform: translateY(-5px);
+        }
+        .insight-panel h2 {
+    font-size: 26px; /* Adjust as needed */
+    font-weight: lighter;
+}
+
+.insight-panel p {
+    font-size: 19px; /* Adjust as needed */
+    text-align: left;
+    
+
+}
+
+         /* Container for insights */
+         .insights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two equal columns for all panels */
+            gap: 20px;
+            padding: 40px;
+            width: 80%; /* Adjust width */
+            max-width: 1300px; /* Limit the maximum width */
+            margin: auto; /* Center the container */
+            margin-right: 450px;
+            height: 300px;
+    
+        }
+
+       /* Panel styling */
+       .insight-panel {
+            border: 1px solid rgb(255, 255, 255);
+            padding: 10px;
+            height: auto;
+            width: 800px;
+            text-align: center;
+            border-radius: 8px;
+            background-color: #1f3138; /* Dark blue background for consistency */
+            height: 350px;
+        }
+        /* Apply grid styling for the Best Users section */
+.insight-panel .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columns */
+    gap: 10px; /* Space between grid items */
+    text-align: left;
+    font-size: 18px;
+}
+
+        /* Styling for buttons */
+        button {
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        /* Button hover effect */
+        button:hover {
+            background-color: white;
+            color: black;
+            border-color: black;
+            transform: translateY(-6px);
+        }
+        #data-driven-insights h2 {
+    font-size: 26px; /* Adjust title size */
+}
+
+#data-driven-insights p {
+    font-size: 23px; /* Adjust paragraph text size */
+    line-height: 1.8; /* Adjust line spacing if needed */
+}
+.book-demo-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            margin-right: 110px;
+            padding: 10px 20px;
+            background-color: #2e3d4f;
+            color: white;
+            border-radius: 9px;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .book-demo-button:hover {
+            background-color: #3b5b96;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a class="button" href="index.html">Home</a></li>
+            <li><a class="button" href="#">How it works</a></li>
+            <li><a class="button" href="#">About us</a></li>
+            <li><a class="button" href="#">Contact us</a></li>
+        </ul>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="Original Logo.png" alt="Design AI Logo">
+        
+            </div>
+        </div>
+        <!-- Log In Button -->
+        <a href="login.html" class="login-button">LOG IN</a>
+        <a href="page2.html" class="book-demo-button">BOOK DEMO</a>
+
+    </nav>
+   
+
+
+    <!-- Feature Panels arranged in grid layout -->
+    <section class="insights">
+        <!-- Customer Feedback Analysis Panel -->
+        <div class="insight-panel" id="data-driven-insights">
+            <h2>AI-Powered Usability Testing</h2>
+            <p>A platform that uses AI to simulate user interactions, such as eye-tracking and heatmaps, to optimize user interfaces and product experiences. This includes AI-driven A/B testing for different features, as well as AI-driven behavioral simulations, where the AI mimics cognitive and emotional user responses to help designers understand the emotional appeal of their designs.</p>
+
+        </div>
+
+        <!-- Market Trend Analysis Panel -->
+        <div class="insight-panel">
+            <h2>Best Users</h2>
+            
+            <p><strong>UX/UI Designers:</strong> Optimize designs based on simulated user interactions and preferences.</p>
+            <p><strong>Product Managers:</strong> Validate product features and user flows through A/B testing and feedback.</p>
+            <p><strong>Web Developers:</strong> Ensure websites and applications are user-friendly and engaging.</p>
+            <p><strong>Marketing Analysts:</strong> Gain insights into user behavior to inform marketing strategies and product positioning.</p>
+            <p><strong>Human-Computer Interaction Researchers:</strong> Study user interactions and emotional responses to design elements.</p>
+        </div>
+        
+        <!-- Competitive Landscape Analysis Panel -->
+        <div class="insight-panel">
+            <h2>Best Industries</h2>
+           
+            <p><strong>Software Development:</strong> Enhance software applications by optimizing user interfaces for better engagement.</p>
+            <p><strong>E-commerce:</strong> Improve online shopping experiences through user behavior analysis and interface testing.</p>
+            <p><strong>Healthcare:</strong> Design user-friendly medical software and devices, ensuring ease of use for patients and professionals.</p>
+            <p><strong>Consumer Electronics:</strong> Validate product usability for complex devices, ensuring they meet user needs effectively.</p>
+        </div>
+        
+        <!-- Predictive Analytics Panel -->
+        <div class="insight-panel">
+            <h2>What Users Gain</h2>
+            
+            <p>1.   <strong>Eye-Tracking Simulation:</strong> Utilizes AI to mimic eye movements, providing heatmaps that reveal focal points within the design.</p>
+            <p>2.   <strong>AI-Driven A/B Testing:</strong> Run automated A/B tests to evaluate the effectiveness of different design elements and features.</p>
+            <p>3.   <strong>Behavioral Simulation:</strong> AI-driven behavioral simulations mimic cognitive and emotional responses to design elements.</p>
+            <p>4.   <strong>Emotional Appeal Analysis:</strong> Analyze the emotional impact of design choices to create products that resonate with users.</p>
+        </div>
+        
+    </section>
+</body>
+</html>

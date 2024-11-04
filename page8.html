@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+             /* Center align items */
+        }
+        .logo-container {
+            position: absolute; /* Position the logo at the top */
+            top: -14px;
+            left: 43%;
+        }
+        .logo img {
+            max-width: 225px; /* Adjust the logo size */
+        }
+        nav {
+            display: flex;
+            align-items: left;
+            padding: 10px 30px;
+            background-color: black;
+            z-index: 1000; /* Ensure the navigation is above other content */
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-left: 7px;
+            margin-top: 0px;
+        }
+        nav ul li a.button {
+            display: inline-block;
+            background-color: rgb(0, 0, 0);
+            text-decoration: none;
+            align-items: center;
+            margin-bottom: 10px;
+            color: white;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+            padding: 20px 20px; /* Set proper padding */
+            margin: 0;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            white-space: nowrap;
+            transition: all 0.2s ease;
+        }
+        nav ul li a.button:hover {
+            color: rgb(255, 255, 255);
+            transform: translateY(-10px);
+        }
+        .login-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #2e3d4f;
+            color: white;
+            border-radius: 9px;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .login-button:hover {
+            background-color: #3b5b96;
+            transform: translateY(-5px);
+        }
+        .insight-panel h2 {
+    font-size: 26px; /* Adjust as needed */
+    font-weight: lighter;
+}
+
+.insight-panel p {
+    font-size: 17.5px; /* Adjust as needed */
+    text-align: left;
+    
+
+}
+
+         /* Container for insights */
+         .insights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two equal columns for all panels */
+            gap: 20px;
+            padding: 40px;
+            width: 80%; /* Adjust width */
+            max-width: 1300px; /* Limit the maximum width */
+            margin: auto; /* Center the container */
+            margin-right: 450px;
+            height: 300px;
+    
+        }
+
+       /* Panel styling */
+       .insight-panel {
+            border: 1px solid rgb(255, 255, 255);
+            padding: 10px;
+            height: auto;
+            width: 800px;
+            text-align: center;
+            border-radius: 8px;
+            background-color: #1f3138; /* Dark blue background for consistency */
+            height: 350px;
+        }
+        /* Apply grid styling for the Best Users section */
+.insight-panel .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columns */
+    gap: 10px; /* Space between grid items */
+    text-align: left;
+    font-size: 18px;
+}
+
+        /* Styling for buttons */
+        button {
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        /* Button hover effect */
+        button:hover {
+            background-color: white;
+            color: black;
+            border-color: black;
+            transform: translateY(-6px);
+        }
+        #data-driven-insights h2 {
+    font-size: 26px; /* Adjust title size */
+}
+
+#data-driven-insights p {
+    font-size: 21px; /* Adjust paragraph text size */
+    line-height: 1.8; /* Adjust line spacing if needed */
+}
+.book-demo-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            margin-right: 110px;
+            padding: 10px 20px;
+            background-color: #2e3d4f;
+            color: white;
+            border-radius: 9px;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .book-demo-button:hover {
+            background-color: #3b5b96;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a class="button" href="index.html">Home</a></li>
+            <li><a class="button" href="#">How it works</a></li>
+            <li><a class="button" href="#">About us</a></li>
+            <li><a class="button" href="#">Contact us</a></li>
+        </ul>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="Original Logo.png" alt="Design AI Logo">
+        
+            </div>
+        </div>
+        <!-- Log In Button -->
+        <a href="login.html" class="login-button">LOG IN</a>
+        <a href="page2.html" class="book-demo-button">BOOK DEMO</a>
+
+    </nav>
+   
+
+
+    <!-- Feature Panels arranged in grid layout -->
+    <section class="insights">
+        <!-- Customer Feedback Analysis Panel -->
+        <div class="insight-panel" id="data-driven-insights">
+            <h2>AI-Driven Product Testing and Simulation</h2>
+            <p>This platform utilizes AI tools to simulate real-world use cases for new product designs, helping companies refine their designs before physical prototyping. This approach is especially beneficial for sectors with high prototyping costs. It incorporates digital twin technology and AI-powered stress testing to simulate both typical and extreme use conditions, including wear and tear, safety, and long-term durability.</p>
+
+        </div>
+
+        <!-- Market Trend Analysis Panel -->
+        <div class="insight-panel">
+            <h2>Best Users</h2>
+            
+            <p><strong>Product Engineers:</strong> Validate design durability and performance through simulated stress tests.</p>
+            <p><strong>R&D Teams:</strong> Conduct in-depth testing and refinement prior to physical prototyping, saving on costs.</p>
+            <p><strong>Quality Assurance Specialists:</strong> Identify potential design flaws and ensure product reliability and safety.</p>
+            <p><strong>Manufacturing Teams:</strong> Assess manufacturing readiness and potential production challenges.</p>
+            <p><strong>Innovation Strategists:</strong> Explore new design possibilities by simulating real-world applications and user conditions.</p>
+        </div>
+        
+        <!-- Competitive Landscape Analysis Panel -->
+        <div class="insight-panel">
+            <h2>Best Industries</h2>
+            
+            <p><strong>Automotive:</strong> Test vehicle components under simulated conditions, ensuring durability and safety standards.</p>
+            <p><strong>Consumer Electronics:</strong> Simulate wear, safety, and lifespan for tech products in diverse environments.</p>
+            <p><strong>Healthcare:</strong> Validate medical device safety, performance, and usability in simulated real-world scenarios.</p>
+            <p><strong>Construction and Heavy Machinery:</strong> Test machinery durability and safety under extreme conditions.</p>
+        </div>
+        
+        <!-- Predictive Analytics Panel -->
+        <div class="insight-panel">
+            <h2>What Users Gain</h2>
+            
+            <p>1.   <strong>Digital Twin Technology:</strong> Simulate and test a digital replica of your product in real-world conditions.</p>
+            <p>2.   <strong>AI-Powered Stress Testing:</strong> Analyze product endurance under extreme conditions and high stress.</p>
+            <p>3.   <strong>Wear and Tear Simulation:</strong> Simulate long-term wear and tear to improve product durability.</p>
+            <p>4.   <strong>Long-Term Durability Testing:</strong> Test product reliability over extended use and varying conditions.</p>
+        </div>
+        
+    </section>
+</body>
+</html>

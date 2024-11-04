@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+             /* Center align items */
+        }
+        .logo-container {
+            position: absolute; /* Position the logo at the top */
+            top: -14px;
+            left: 43%;
+        }
+        .logo img {
+            max-width: 225px; /* Adjust the logo size */
+        }
+        nav {
+            display: flex;
+            align-items: left;
+            padding: 10px 30px;
+            background-color: black;
+            z-index: 1000; /* Ensure the navigation is above other content */
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-left: 7px;
+            margin-top: 0px;
+        }
+        nav ul li a.button {
+            display: inline-block;
+            background-color: rgb(0, 0, 0);
+            text-decoration: none;
+            align-items: center;
+            margin-bottom: 10px;
+            color: white;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+            padding: 20px 20px; /* Set proper padding */
+            margin: 0;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            white-space: nowrap;
+            transition: all 0.2s ease;
+        }
+        nav ul li a.button:hover {
+            color: rgb(255, 255, 255);
+            transform: translateY(-10px);
+        }
+        .login-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #2e3d4f;
+            color: white;
+            border-radius: 9px;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .login-button:hover {
+            background-color: #3b5b96;
+            transform: translateY(-5px);
+        }
+        .insight-panel h2 {
+    font-size: 26px; /* Adjust as needed */
+    font-weight: lighter;
+}
+
+.insight-panel p {
+    font-size: 17px; /* Adjust as needed */
+    text-align: left;
+    
+
+}
+
+         /* Container for insights */
+         .insights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two equal columns for all panels */
+            gap: 20px;
+            padding: 40px;
+            width: 80%; /* Adjust width */
+            max-width: 1300px; /* Limit the maximum width */
+            margin: auto; /* Center the container */
+            margin-right: 450px;
+            height: 300px;
+    
+        }
+
+       /* Panel styling */
+       .insight-panel {
+            border: 1px solid rgb(255, 255, 255);
+            padding: 10px;
+            height: auto;
+            width: 800px;
+            text-align: center;
+            border-radius: 8px;
+            background-color: #1f3138; /* Dark blue background for consistency */
+            height: 350px;
+        }
+        /* Apply grid styling for the Best Users section */
+.insight-panel .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columns */
+    gap: 10px; /* Space between grid items */
+    text-align: left;
+    font-size: 18px;
+}
+
+        /* Styling for buttons */
+        button {
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        /* Button hover effect */
+        button:hover {
+            background-color: white;
+            color: black;
+            border-color: black;
+            transform: translateY(-6px);
+        }
+        #data-driven-insights h2 {
+    font-size: 26px; /* Adjust title size */
+}
+
+#data-driven-insights p {
+    font-size: 20px; /* Adjust paragraph text size */
+    line-height: 1.8; /* Adjust line spacing if needed */
+}
+.book-demo-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            margin-right: 110px;
+            padding: 10px 20px;
+            background-color: #2e3d4f;
+            color: white;
+            border-radius: 9px;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .book-demo-button:hover {
+            background-color: #3b5b96;
+            transform: translateY(-5px);
+        }
+        #what-users-gain p {
+    font-size: 20px;
+}
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a class="button" href="index.html">Home</a></li>
+            <li><a class="button" href="#">How it works</a></li>
+            <li><a class="button" href="#">About us</a></li>
+            <li><a class="button" href="#">Contact us</a></li>
+        </ul>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="Original Logo.png" alt="Design AI Logo">
+        
+            </div>
+        </div>
+        <!-- Log In Button -->
+        <a href="login.html" class="login-button">LOG IN</a>
+        <a href="page2.html" class="book-demo-button">BOOK DEMO</a>
+
+    </nav>
+   
+
+
+    <!-- Feature Panels arranged in grid layout -->
+    <section class="insights">
+        <!-- Customer Feedback Analysis Panel -->
+        <div class="insight-panel" id="data-driven-insights">
+            <h2>Customization and Personalization Platform</h2>
+            <p>This platform provides an AI solution that enables personalized product offerings based on user behavior and preferences. It can be integrated into e-commerce platforms, allowing end-users to co-create their products by selecting features, colors, materials, and more, with AI guiding them toward the best configurations. Users receive real-time feedback on costs, materials, and environmental impact as they make changes to their designs. Additionally, AI can offer design guidance based on both user preferences and sustainability considerations.</p>
+
+        </div>
+
+        <!-- Market Trend Analysis Panel -->
+        <div class="insight-panel">
+            <h2>Best Users</h2>
+
+<p><strong>E-commerce Managers:</strong> Integrate personalized product customization options into online stores.</p>
+<p><strong>Product Designers:</strong> Tailor products based on real-time customer preferences and environmental impact.</p>
+<p><strong>Marketing Teams:</strong> Leverage customization data to enhance customer targeting and retention.</p>
+<p><strong>Sustainability Consultants:</strong> Ensure designs meet environmental goals while satisfying user preferences.</p>
+<p><strong>Customer Experience Managers:</strong> Improve user engagement with interactive, co-creation experiences.</p>
+
+</div>
+
+<!-- Competitive Landscape Analysis Panel -->
+<div class="insight-panel">
+    <h2>Best Industries</h2>
+   
+    <p><strong>Fashion:</strong> Enable customers to personalize styles, colors, and materials for unique, eco-conscious apparel.</p>
+    <p><strong>Automotive:</strong> Offer vehicle personalization options, from color schemes to interiors, enhancing user satisfaction.</p>
+    <p><strong>Consumer Electronics:</strong> Personalize tech products to match customer preferences and usability needs.</p>
+    <p><strong>Home Decor:</strong> Allow customers to co-create furniture or decor tailored to their style and spatial needs.</p>
+    <p><strong>Beauty & Personal Care:</strong> Customize products like skincare and cosmetics, aligning with individual needs and sustainability.</p> 
+</div>
+
+<!-- Predictive Analytics Panel -->
+<div class="insight-panel" id="what-users-gain">
+    <h2>What Users Gain</h2>
+    
+    <p>1.   <strong>Personalized Product Offering:</strong> Allows users to select features, colors, and materials to customize their products.</p>
+    <p>2.   <strong>Real-Time Feedback:</strong> Provides instant updates on costs, materials, and environmental impact during customization.</p>
+    <p>3.   <strong>Sustainability Guidance:</strong> Guides users in making eco-friendly choices based on preferences and impact considerations.</p>
+    <p>4.   <strong>Design Assistance:</strong> Offers tailored design suggestions based on user preferences and sustainability considerations, ensuring the best product configuration.</p>
+</div>
+</div>
+
+    </section>
+</body>
+</html>

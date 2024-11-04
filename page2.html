@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css.css">
+    <style>
+        /* Form Container Styling */
+        .form-container {
+            max-width: 600px;
+            margin: 20px 30;
+            margin-top: -160px;
+            padding: 10px;
+            background-color: #000000;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        /* General Input Styles */
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 9px;
+            margin-bottom: 15px;
+            border: 1px solid #3a3a3a;
+            border-radius: 4px;
+            background-color: #1a1a1a; /* Dark background color */
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            color: white; /* Set text inside input fields to white */
+        }
+
+        /* Textarea Styling */
+        textarea {
+            resize: none;
+            height: 150px;
+        }
+
+        /* Submit Button Styling */
+        .submit-button {
+            display: inline-block;
+            background-color: #2e2e2e;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Submit Button Hover Effect */
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+
+        /* Form Heading */
+        .form-container h2 {
+            text-align: center;
+            font-family: 'Lora', serif;
+            font-size: 24px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        /* Centering the Form Section */
+        .form-section {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Form Wrapper */
+        .demo-form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* Button Group Styling */
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        /* Two Columns for Buttons */
+        .button-column {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Add gap between buttons */
+        }
+
+        /* Radio/Checkbox Labels Styled as Buttons */
+        .button-group input[type="checkbox"] {
+            display: none; /* Hide the actual radio/checkbox */
+        }
+
+        .button-group label {
+            padding: 15px;
+            background-color: #2e2e2e;
+            color: white; /* Set button text to white */
+            text-align: center;
+            border-radius: 35px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            transition: background-color 0.3s;
+        }
+
+        /* Style the selected button */
+        .button-group input[type="checkbox"]:checked + label {
+            background-color: #3b5b96; /* Highlight selected option */
+        }
+
+        /* Hover Effect */
+        .button-group label:hover {
+            background-color: #3b5b96; /* Change background on hover */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a class="button" href="index.html">Home</a></li>
+            <li><a class="button" href="#">How it works</a></li>
+            <li><a class="button" href="#">About us</a></li>
+            <li><a class="button" href="#">Contact us</a></li>
+        </ul>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="Original Logo.png" alt="Design AI Logo">
+            </div>
+        </div>
+        <!-- Log In Button -->
+        <a href="page11.html" class="login-button">LOG IN</a>
+    </nav>
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <div class="form-container" id="formPageContent">
+            <h2></h2>
+            <form action="submit_demo_request.php.php" method="POST" class="demo-form">
+                <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                <input type="text" id="companyName" name="companyName" placeholder="Company Name (Optional)">
+                <input type="text" id="rolePosition" name="rolePosition" placeholder="Role/Position" required>
+                <textarea id="message" name="message" placeholder="Message/Requests" required></textarea>
+
+                <!-- Button Group with Descriptive Text -->
+                <div class="button-group">
+                    <!-- Left Column -->
+                    <div class="button-column">
+                        <input type="checkbox" id="option1" name="demoOption[]" value="Data-Driven Design Insights">
+                        <label for="option1">Data-Driven Design Insights</label>
+
+                        <input type="checkbox" id="option2" name="demoOption[]" value="AI-Powered Usability Testing">
+                        <label for="option2">Collaboration and
+                            Workflow Tools
+                            </label>
+
+                        <input type="checkbox" id="option3" name="demoOption[]" value="Process Automation
+                        Solutions">
+                        <label for="option3">Process Automation
+                            Solutions</label>
+
+                        <input type="checkbox" id="option4" name="demoOption[]" value="Customization and
+                        Personalization Platform">
+                        <label for="option4">Customization and
+                            Personalization Platform</label>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="button-column">
+                        <input type="checkbox" id="option5" name="demoOption[]" value="Generative Design Tools">
+                        <label for="option5">Generative Design Tools</label>
+
+                        <input type="checkbox" id="option6" name="demoOption[]" value="AI-Driven Product Testing
+                        and Simulation">
+                        <label for="option6">AI-Driven Product Testing
+                            and Simulation</label>
+
+                        <input type="checkbox" id="option7" name="demoOption[]" value="Sustainability Insights">
+                        <label for="option7">Sustainability Insights</label>
+
+                        <input type="checkbox" id="option8" name="demoOption[]" value="Collaboration and
+                        Workflow Tools">
+                        <label for="option8">AI-Powered Usability Testing</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
+
+
+    
