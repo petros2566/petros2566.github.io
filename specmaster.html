@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Insight AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+
+    
+
+    
+
+    
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+font-weight: 500;
+            margin: 0;
+            margin-bottom: 40px;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+             /* Center align items */
+        }
+        .logo-container {
+            position: absolute; /* Position the logo at the top */
+            top: -14px;
+            left: 43%;
+        }
+        .logo img {
+            max-width: 225px; /* Adjust the logo size */
+        }
+        nav {
+            display: flex;
+            align-items: left;
+            padding: 10px 30px;
+            background-color: black;
+            z-index: 1000; /* Ensure the navigation is above other content */
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-left: 7px;
+            margin-top: 0px;
+        }
+        nav ul li a.button {
+            display: inline-block;
+            background-color: rgb(0, 0, 0);
+            text-decoration: none;
+            align-items: center;
+            margin-bottom: 10px;
+            color: white;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+            padding: 20px 20px; /* Set proper padding */
+            margin: 0;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            white-space: nowrap;
+            transition: all 0.2s ease;
+        }
+        nav ul li a.button:hover {
+            color: rgb(255, 255, 255);
+            transform: translateY(-10px);
+        }
+        .login-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #2e3d4f;
+            color: white;
+            border-radius: 9px;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .login-button:hover {
+            background-color: #3b5b96;
+            transform: translateY(-5px);
+        }
+    
+
+
+        /* Styling for buttons */
+        button {
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        /* Button hover effect */
+        button:hover {
+            background-color: white;
+            color: black;
+            border-color: black;
+            transform: translateY(-6px);
+        }
+   
+
+.book-demo-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            margin-right: 110px;
+            padding: 10px 20px;
+            background-color: #2e3d4f;
+            color: white;
+            border-radius: 9px;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .book-demo-button:hover {
+            background-color: #3b5b96;
+            transform: translateY(-5px);
+        }
+        h2 {
+            margin-left: 490px;
+            font-weight: 500;
+        }
+        #best-users-header {
+    margin-left: 520px; /* Adjust the value as needed */
+}
+       
+        p {
+            margin-left: 370px;
+            font-size: 23px
+        
+        }
+        .narrow-paragraph {
+    max-width: 1159px; /* Limit the width to 600px */
+    margin: 0 auto; /* Center the paragraph horizontally */
+    text-align: justify; /* Optional: improves the text flow */
+    line-height: 2.2;
+}
+.panel {
+            background-color: #1f3138;
+            margin: 20px;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            margin-left: 320px;
+            max-width: 1200px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            border: 1px solid rgb(255, 255, 255);
+            
+        }
+        p, li {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: left;
+            margin-left: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a class="button" href="systemsindex.html">Home</a></li>
+            <li><a class="button" href="#">How it works</a></li>
+            <li><a class="button" href="#">About us</a></li>
+            <li><a class="button" href="#">Contact us</a></li>
+        </ul>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="Original Logo.png" alt="Design AI Logo">
+        
+            </div>
+        </div>
+        <!-- Log In Button -->
+        <a href="login.html" class="login-button">LOG IN</a>
+        <a href="page2.html" class="book-demo-button">BOOK DEMO</a>
+
+    </nav>
+
+    <div class="panel">
+    <h2>SpecMaster AI</h2>
+    <p class="narrow-paragraph">SpecMaster is an advanced AI-driven tool that efficiently generates detailed system specifications from both structured and unstructured data. By automating the conversion of diverse inputs into precise technical documents, SpecMaster AI ensures that specifications are comprehensive and continuously updated as project requirements evolve. This tool streamlines the specification process, significantly reducing manual effort and improving accuracy in documentation. </p>
+    
+        </div>
+
+       
+        <div class="panel">
+            <h2 id="best-users-header">Best Users</h2>
+            
+            <p><strong>Systems Engineers:</strong> Ensure precise interactions between complex system components.</p>          
+            <p><strong>Software Developers:</strong> Rely on it for clear specifications to streamline development processes.</p>
+            <p><strong>Project Managers:</strong> Helps maintain updated project documentation for better management.</p>
+            <p><strong>Quality Assurance Analysts:</strong> Provides the latest specifications for accurate test case development.</p>
+            <p><strong>Business Analysts:</strong> Transform business requirements into precise technical specifications, enhancing communication between stakeholders and developers.</p>
+            <p><strong>Systems Architects:</strong> Generate detailed architectural specifications to ensure system designs meet all technical requirements.</p>
+
+            
+            
+
+        </div>
+    </div>
+        
+        <div class="panel">
+            <h2>Best Industries</h2>
+            <p><strong>Aerospace and Defense:</strong> Requires precise planning and execution; delays or errors can have significant consequences in advanced technologies.</p>
+            <p><strong>Automotive:</strong> Develops new technologies needing extensive collaboration and strict compliance with safety standards.</p>
+            <p><strong>Telecommunications:</strong> Fast-paced industry managing diverse projects, from infrastructure deployment to new service development.</p>
+            <p><strong>Healthcare:</strong> Projects demand rigorous compliance and have high-stake outcomes in IT systems and medical devices.</p>
+            <p><strong>Energy and Utilities:</strong> Involves large-scale infrastructure with long timelines, requiring precise management and regulatory oversight.</p>
+            <p><strong>Industrial Automation and Manufacturing:</strong> Designs and implements automated systems needing high precision, efficiency, and reliability. </p>
+            <p><strong>Software Development:</strong> Handles multiple projects needing rapid adaptation to changing technologies and market demands.</p>
+            <p><strong>Transportation and Logistics:</strong> Manages complex operations requiring coordination and optimization for efficient movement of goods and services.
+            </p>
+
+        </div>
+        
+        <div class="panel">
+            <h2>Key Benefits for Users:</h2>
+            
+            <p>1.   <strong>Efficiency:</strong> Automates specification creation, reducing manual effort and saving time.</p>
+            <p>2.   <strong>Accuracy:</strong> Converts inputs into precise technical specifications.</p>
+            <p>3.   <strong>Consistency:</strong> Ensures uniform formatting and content across all documents.</p>
+            <p>4.   <strong>Up-to-Date Specifications:</strong> Keeps documents current as project requirements change.</p>
+            <p>5.   <strong>Improved Collaboration:</strong> Enhances team communication with accurate, accessible specifications.</p>
+            <p>6.   <strong>Error Reduction:</strong>Minimizes documentation errors by automating processes.</p>
+            <p>7.   <strong>Compliance Support:</strong> Assists in meeting regulatory and industry standards.</p>
+
+
+        </div>
+        
+    </section>
+</body>
+</html>
